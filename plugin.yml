@@ -5,7 +5,7 @@ api:
   - 5.0.0
 
 author: ZyberPE
-description: Portable Ender Chest with staff viewing support.
+description: Portable Ender Chest with staff viewing and editing support.
 
 commands:
   echest:
@@ -13,6 +13,7 @@ commands:
     usage: "/echest [see <player>]"
     aliases:
       - ec
+      - enderchest
     permission: echest.command
 
 permissions:
@@ -20,12 +21,17 @@ permissions:
     description: Allows use of /echest
     default: true
 
-  echest.see:
-    description: Allows viewing other players' Ender Chests
+  echest.view:
+    description: Allows viewing another player's Ender Chest
+    default: op
+
+  echest.edit:
+    description: Allows editing another player's Ender Chest
     default: op
 
   echest.admin:
-    description: Administrative EChest permissions
+    description: Grants all EChest permissions
     default: op
     children:
-      echest.see: true
+      echest.view: true
+      echest.edit: true
