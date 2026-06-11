@@ -1,0 +1,24 @@
+sounds:
+  enabled: true
+
+staff:
+  allow-offline-targets: false
+
+messages:
+  prefix: "&8[&5EChest&8] &r"
+
+  no-permission: "&cYou do not have permission."
+  player-only: "&cThis command can only be used in-game."
+  player-not-found: "&cPlayer not found."
+
+  opened-own: "&aOpened your Ender Chest."
+  closed-own: "&cClosed your Ender Chest."
+
+  viewing: "&eViewing &6{player}&e's Ender Chest."
+  editing: "&cEditing &6{player}&c's Ender Chest."
+
+  placed: "&eYou placed an Ender Chest."
+  broken: "&cYou broke an Ender Chest."
+
+  opened-block: "&aOpened an Ender Chest."
+  closed-block: "&cClosed an Ender Chest."
