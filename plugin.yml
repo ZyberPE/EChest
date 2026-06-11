@@ -1,10 +1,31 @@
 name: EChest
 version: 1.0.0
-api: 5.0.0
 main: EChest\Main
+api:
+  - 5.0.0
+
+author: ZyberPE
+description: Portable Ender Chest with staff viewing support.
 
 commands:
   echest:
     description: Open your Ender Chest
+    usage: "/echest [see <player>]"
     aliases:
       - ec
+    permission: echest.command
+
+permissions:
+  echest.command:
+    description: Allows use of /echest
+    default: true
+
+  echest.see:
+    description: Allows viewing other players' Ender Chests
+    default: op
+
+  echest.admin:
+    description: Administrative EChest permissions
+    default: op
+    children:
+      echest.see: true
