@@ -1,0 +1,10 @@
+name: EChest
+version: 1.0.0
+api: 5.0.0
+main: EChest\Main
+
+commands:
+  echest:
+    description: Open your Ender Chest
+    aliases:
+      - ec
